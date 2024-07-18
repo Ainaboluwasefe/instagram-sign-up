@@ -88,3 +88,30 @@ a{
     padding-top: 40px;
     height: 90px;
 }
+.placeholder{
+    font-weight: 300;
+    font-size: 12px;
+    color: #333333;
+}
+.relative > p{
+    position: absolute;
+    top: 20PX;
+    left: 10px;
+    z-index: 10;
+}
+.relative > input:valid ~ p{
+    top: 0px;
+    background-color: whitesmoke;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.relative > input:focus ~ p{
+    top: 0px;
+    background-color: whitesmoke;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: all 0.1s ease;
+}
+.relative{
+    margin-bottom: 20px;
+}
